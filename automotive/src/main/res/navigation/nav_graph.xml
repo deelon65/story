@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.story.ui.fragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.story.ui.fragment.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_welcomeOnboardingFragment"
+            app:destination="@id/welcomeOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.story.ui.fragment.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" />
+    <fragment
+        android:id="@+id/welcomeOnboardingFragment"
+        android:name="com.example.story.ui.fragment.WelcomeOnboardingFragment"
+        android:label="fragment_onboarding_welcome"
+        tools:layout="@layout/fragment_onboarding_welcome" >
+        <action
+            android:id="@+id/action_welcomeOnboardingFragment_to_userNameOnboardingFragment"
+            app:destination="@id/userNameOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userNameOnboardingFragment"
+        android:name="com.example.story.ui.fragment.UserNameOnboardingFragment"
+        android:label="fragment_onboarding_user_name"
+        tools:layout="@layout/fragment_onboarding_user_name" >
+        <action
+            android:id="@+id/action_userNameOnboardingFragment_to_birthdayOnboardingFragment"
+            app:destination="@id/birthdayOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayOnboardingFragment"
+        android:name="com.example.story.ui.fragment.BirthdayOnboardingFragment"
+        android:label="fragment_onboarding_birthday"
+        tools:layout="@layout/fragment_onboarding_birthday" >
+        <action
+            android:id="@+id/action_birthdayOnboardingFragment_to_sexOnboardingFragment"
+            app:destination="@id/sexOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sexOnboardingFragment"
+        android:name="com.example.story.ui.fragment.SexOnboardingFragment"
+        android:label="fragment_onboarding_sex"
+        tools:layout="@layout/fragment_onboarding_sex" >
+        <action
+            android:id="@+id/action_sexOnboardingFragment_to_orientationOnboardingFragment"
+            app:destination="@id/orientationOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orientationOnboardingFragment"
+        android:name="com.example.story.ui.fragment.OrientationOnboardingFragment"
+        android:label="fragment_onboarding_orientation"
+        tools:layout="@layout/fragment_onboarding_orientation" >
+        <action
+            android:id="@+id/action_orientationOnboardingFragment_to_choosingSexOnboardingFragment"
+            app:destination="@id/choosingSexOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosingSexOnboardingFragment"
+        android:name="com.example.story.ui.fragment.ChoosingSexOnboardingFragment"
+        android:label="fragment_onboarding_choosing_sex"
+        tools:layout="@layout/fragment_onboarding_choosing_sex" >
+        <action
+            android:id="@+id/action_choosingSexOnboardingFragment_to_schoolOnboardingFragment"
+            app:destination="@id/schoolOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/schoolOnboardingFragment"
+        android:name="com.example.story.ui.fragment.SchoolOnboardingFragment"
+        android:label="fragment_onboarding_school"
+        tools:layout="@layout/fragment_onboarding_school" >
+        <action
+            android:id="@+id/action_schoolOnboardingFragment_to_hobbieOnboardingFragment"
+            app:destination="@id/hobbieOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hobbieOnboardingFragment"
+        android:name="com.example.story.ui.fragment.HobbieOnboardingFragment"
+        android:label="fragment_onboarding_hobbie"
+        tools:layout="@layout/fragment_onboarding_hobbie" >
+        <action
+            android:id="@+id/action_hobbieOnboardingFragment_to_imageSelectionOnboardingFragment"
+            app:destination="@id/imageSelectionOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageSelectionOnboardingFragment"
+        android:name="com.example.story.ui.fragment.ImageSelectionOnboardingFragment"
+        android:label="fragment_onboarding_image_selection"
+        tools:layout="@layout/fragment_onboarding_image_selection" />
+</navigation>

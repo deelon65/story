@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.Bridge">
+
+    <TextView
+        android:id="@+id/tvRuleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_check"
+        android:drawablePadding="@dimen/padding_4"
+        android:theme="@style/HeaderTextStyleBold" />
+
+    <TextView
+        android:id="@+id/tvRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_14"
+        android:theme="@style/SubtitleTextStyleNormal" />
+
+</LinearLayout>

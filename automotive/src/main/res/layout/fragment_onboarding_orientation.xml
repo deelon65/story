@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_main"
+    tools:context="com.example.story.ui.fragment.OrientationOnboardingFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/value_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:max="11"
+        android:progress="6"
+        android:progressTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_12"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:text="@string/miss"
+        android:theme="@style/MissTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMySexOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/mySexOrientation"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_30"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <TextView
+        android:id="@+id/tvChooseOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/chooseOption"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/tvMySexOrientation"
+        app:layout_constraintTop_toBottomOf="@id/tvMySexOrientation" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orientarionRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginEnd="@dimen/margin_30"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/padding_20"
+        app:layout_constraintBottom_toTopOf="@id/cbShowOrientation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChooseOption"
+        app:layout_constraintVertical_bias="0"
+        tools:listitem="@layout/item_orientation" />
+
+    <CheckBox
+        android:id="@+id/cbShowOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:text="@string/showOrientation"
+        app:layout_constraintBottom_toTopOf="@id/btnContinues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:background="@drawable/btn_create_continue_account"
+        android:text="@string/continues"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

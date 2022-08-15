@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Story</string>
+    <string name="name">stories</string>
+    <string name="createAccount">СОЗДАТЬ АККАУНТ</string>
+    <string name="enter">ВОЙТИ</string>
+    <string name="intro">Нажимая «Создать аккаунт» или «Войти», вы \n соглашаетесь с нашими Условиями. Узнайте,\n как мы обрабатываем ваши данные,\n ознакомившись с Политикой \n конфиденциальности и Политикой в \n отношении файлов cookie.</string>
+    <string name="problem">Проблемы со входом?</string>
+    <string name="tvEnterAddress">Укажите\nадрес вашей\nэлектронной\nпочты\nи пароль.</string>
+    <string name="or">или</string>
+    <string name="authorizationGoogle">ВОЙТИ С ПОМОЩЬЮ GOOGLE</string>
+    <string name="confirmAddress">Не теряйте доступ к своему\nаккаунту. Укажите адрес\nвашей электронной почты\nи пароль.</string>
+    <string name="followRules">Пожалуйста, соблюдайте \nследующие правила:</string>
+    <string name="welcome">Добро пожаловать в \nStories!</string>
+    <string name="myName">Меня\nзовут</string>
+    <string name="willBeDisplayed">Так оно будет отображаться\nв Stories, и ты не сможешь его\nизменить</string>
+    <string name="accept">ПРИНЯТЬ</string>
+    <string name="continues">ПРОДОЛЖИТЬ</string>
+    <string name="myBirthday">Мой\nдень\nрождения</string>
+    <string name="woman">ЖЕНЩИНА</string>
+    <string name="man">МУЖЧИНА</string>
+    <string name="miss">ПРОПУСТИТЬ</string>
+    <string name="mySexOrientation">Моя сексуальная\nориентация:</string>
+    <string name="chooseOption">Выберите до 3 вариантов</string>
+    <string name="showOrientation">Показывать мою ориентацию в профиле</string>
+    <string name="showGender">Показывать мой пол в профиле</string>
+    <string name="enterEmail">Введите адрес электронной почты</string>
+    <string name="enterPassword">Пароль</string>
+    <string name="confirmGoogle">Мгновенное подтверждение при привязке\nаккаунта Google</string>
+    <string name="yourAgeVisible">Ваш возраст будет виден всем</string>
+    <string name="school">Название школы</string>
+    <string name="mySchool">Моя\nшкола:</string>
+    <string name="i">Я</string>
+    <string name="textHobbie">Интересы</string>
+    <string name="addHobbie">Добавьте интересы в свой профиль, чтобы\nподелиться ими с другими пользователями.</string>
+    <string name="selectImage">Добавить фото</string>
+    <string name="select2Image">Дабавьте хотя бы 2 фото, чтобы\nпродождить</string>
+    <string name="show">Показывать</string>
+    <string name="all">всех</string>
+    <string name="male">мужчин</string>
+    <string name="famale">женщин</string>
+
+    <string-array name="headerRulesRV">
+        <item>Будьте собой.</item>
+        <item>Помните о безопасности.</item>
+        <item>Ведите себя достойно.</item>
+    </string-array>
+
+    <string-array name="rulesRV">
+        <item>Ваши фото, возраст и информация\nо себе должны быть настоящими.</item>
+        <item>Не торопитесь делится своей\nличной информацией.\nБезопасность превыше всего.</item>
+        <item>Уважайте других и отностиесь к\nним так, как бы вы хотели, чтобы\n относились к вам.</item>
+    </string-array>
+
+    <string-array name="orientationRV">
+        <item>Гетеро</item>
+        <item>Гей</item>
+        <item>Лесбиянка</item>
+        <item>Бисексуал(ка)</item>
+        <item>Асексуал(ка)</item>
+        <item>Демисексуал(ка)</item>
+    </string-array>
+
+    <string-array name="hobbieRV">
+        <item>Пение</item>
+        <item>Спорт</item>
+        <item>Астрология</item>
+        <item>Музыка</item>
+        <item>Сериалы</item>
+        <item>Фильмы</item>
+        <item>Соцсети</item>
+        <item>Путешествия</item>
+        <item>Поэзия</item>
+        <item>Машина</item>
+        <item>Недвижимость</item>
+        <item>Футбол</item>
+        <item>Баскетбол</item>
+        <item>Игры</item>
+        <item>IT</item>
+        <item>Вино</item>
+    </string-array>
+</resources>
